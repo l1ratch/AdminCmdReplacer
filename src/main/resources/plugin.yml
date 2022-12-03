@@ -1,0 +1,9 @@
+name: AdminCmdReplacer
+version: '${project.version}'
+main: admincmdreplacer.admincmdreplacer.AdminCmdReplacer
+load: STARTUP
+authors: [ Link_play ]
+description: Меняет ответы системных команд
+commands:
+  AdminCmdReplacer:
+    aliases: [ acr ]

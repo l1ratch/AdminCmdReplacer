@@ -1,0 +1,310 @@
+# Плагин AdminCmdReplacer. Написал: Link_play
+# Плагин меняет стандартный ответ на указанные ниже команды.
+# Единственная команда плагина /AdminCmdReplacer reload или /ACR reload - перезагружает конфиг плагина!
+
+# Блокировка TabComplete(Авто-Таб)
+TabComplete:
+  Allow: false
+
+# Когда игрок прописывает одну из разновидностей команды /Help - он получает текст из пункта msg: ""
+Help:
+  Allow: true
+  msg:
+    - "&fPlugins unloaded..."
+  cmd:
+    - "help"
+    - "Help"
+    - "?"
+    - "bukkit:help"
+    - "bukkit:Help"
+    - "bukkit:?"
+    - "Bukkit:help"
+    - "Bukkit:Help"
+    - "Bukkit:?"
+
+# Когда игрок прописывает одну из разновидностей команды /About - он получает текст из пункта msg: ""
+About:
+  Allow: true
+  msg:
+    - "&fThis server is running LinkCore version SuperVersion (MC: Super) (Implementing API version Super-R0.1)"
+  cmd:
+    - "about"
+    - "About"
+    - "bukkit:about"
+    - "bukkit:About"
+    - "Bukkit:about"
+    - "Bukkit:About"
+
+# Когда игрок прописывает одну из разновидностей команды /Version - он получает текст из пункта msg: ""
+Version:
+  Allow: true
+  msg:
+    - "&fThis server is running LinkCore version SuperVersion (MC: Super) (Implementing API version Super-R0.1)"
+  cmd:
+    - "version"
+    - "Version"
+    - "ver"
+    - "Ver"
+    - "bukkit:version"
+    - "bukkit:Version"
+    - "bukkit:ver"
+    - "bukkit:Ver"
+    - "Bukkit:version"
+    - "Bukkit:Version"
+    - "Bukkit:ver"
+    - "Bukkit:Ver"
+
+# Когда игрок прописывает одну из разновидностей команды /Plugins - он получает текст из пункта msg: ""
+Plugins:
+  Allow: true
+  msg:
+    - "&fPlugins (2): &aLinksCore&f, &aLinksPerm"
+  cmd:
+    - "plugins"
+    - "Plugins"
+    - "pl"
+    - "Pl"
+    - "bukkit:plugins"
+    - "bukkit:Plugins"
+    - "bukkit:pl"
+    - "bukkit:Pl"
+    - "Bukkit:plugins"
+    - "Bukkit:Plugins"
+    - "Bukkit:pl"
+    - "Bukkit:Pl"
+
+# Когда игрок прописывает одну из разновидностей команды /op или /deop - он получает текст из пункта msg: ""
+Op:
+  Allow: true
+  msg:
+    - "§6§lEpsilon-Security §f| Император запретил тебе делать это!"
+  cmd:
+    - "op"
+    - "deop"
+    - "minecraft:op"
+    - "minecraft:deop"
+
+# Когда игрок прописывает одну из команд списка cmd: "" - он получает текст из пункта msg: ""
+BlockCMD:
+  Allow: true
+  msg:
+    - "§6§lEpsilon §f| §cУпс.. Похоже такой команды не существует!"
+  cmd:
+    - lp
+    - icanhasbukkit
+    - plugman
+    - protect
+    - pex
+    - say
+    - tpaall
+    - chestcommands
+    - etpaall
+    - minecraft
+    - me
+    - wb
+    - worldborder
+    - ncp
+    - say
+    - chestcommand
+    - chestcommand open
+    - chestcommand open free
+    - citizens
+    - minecraft:me
+    - ncp
+    - nocheatplus
+    - ast
+    - restart
+    - bw stop
+    - killall
+    - email
+    - save-all
+    - an
+    - op
+    - deop
+    - stop
+    - tpall
+    - reload
+    - icanhasbukkit
+    - epl
+    - eop
+    - butcher
+    - ebutcher
+    - edeop
+    - estop
+    - erl
+    - kickall
+    - ekickall
+    - whitelist
+    - wl
+    - ewhitelist
+    - ewl
+    - elagg clear
+    - ereload
+    - ehelp
+    - eicanhasbukkit
+    - /limit
+    - lp
+    - /schem
+    - essentials
+    - bukkit
+    - bungeecord
+    - ekillall
+    - promote
+    - demote
+    - sphere
+    - /sphere
+    - worldedit
+    - worldedit:calc
+    - calc
+    - calculate
+    - /calculate
+    - bukkit:ban
+    - bukkit:kill
+    - bukkit:kick
+    - minecraft:ban
+    - minecraft:kill
+    - minecraft:kick
+    - minecraft:op
+    - worldguard:rg
+    - minecraft:gamemode
+    - minecraft:item
+    - minecraft:gamerule
+    - minecraft:potion
+    - minecraft:effect
+    - minecraft:ban-ip
+    - minecraft:slay
+    - /calc
+    - essentials:hack
+    - essentials:epowertool
+    - essentials:pt
+    - essentials:powertool
+    - pt
+    - powertool
+    - epowertool
+    - superpickaxe
+    - me
+    - sp
+    - mat
+    - elightning
+    - shock
+    - give
+    - eshock
+    - smite
+    - esmite
+    - strike
+    - estrike
+    - thor
+    - ethor
+    - elightning
+    - shock
+    - eshock
+    - smite
+    - esmite
+    - strike
+    - estrike
+    - thor
+    - ethor
+    - ctags
+    - svs
+    - serversigns
+    - tasker enable
+    - calc
+    - /calc
+    - calc
+    - tasker
+    - stop
+    - lipmute
+    - gamerule
+    - sudo
+    - plugman
+    - simplewands
+    - lkick
+    - lmute
+    - creative
+    - lunmute
+    - autobackup
+    - ekill
+    - kill
+    - limit
+    - /limit
+    - purge
+    - restart
+    - autopurge
+    - ncp
+    - spigot:restart
+    - backup
+    - autosave
+    - save
+    - estop
+    - lagg
+    - autosaveworld
+    - silence
+    - esilence
+    - eco
+    - eeco
+    - execute
+    - economy
+    - tell
+    - asw
+    - etell
+    - kill
+    - ekill
+    - kick
+    - whisper
+    - ewhisper
+    - reply
+    - ereply
+    - ejail
+    - ejails
+    - esetjail
+    - kickall
+    - ekickall
+    - bigtree
+    - tree
+    - slay
+    - eci
+    - enick
+    - ept
+    - am
+    - automessage
+    - powertool
+    - epowertool
+    - pt
+    - getgoods
+    - mob
+    - pet
+    - enchant 35
+    - /sel
+    - pos1
+    - /pos1
+    - pos2
+    - /pos2
+    - delwarp
+    - permissionsex
+    - /hpos1
+    - /walls
+    - nuke
+    - snow
+    - cut
+    - endercrystal
+    - /snow
+    - /cut
+    - /walls
+    - /walls
+    - summon
+    - tpall
+    - rl
+    - authme unregister
+    - pt set lava
+    - unregister
+    - authme
+    - region remove spawn_main
+    - setworldspawn_main
+    - setspawn_main
+    - ncp delay
+    - nocheatplus delay
+    - lban
+    - ltempmute
+    - ltempban
+    - demote
+    - promote
