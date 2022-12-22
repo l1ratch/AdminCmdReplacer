@@ -77,7 +77,7 @@ Plugins:
 Op:
   Allow: true
   msg:
-    - "§6§lEpsilon-Security §f| Император запретил тебе делать это!"
+    - "§6§lSecurity §f| Император запретил тебе делать это!"
   cmd:
     - "op"
     - "deop"
@@ -88,7 +88,7 @@ Op:
 BlockCMD:
   Allow: true
   msg:
-    - "§6§lEpsilon §f| §cУпс.. Похоже такой команды не существует!"
+    - "§6§lServer §f| §cУпс.. Похоже такой команды не существует!"
   cmd:
     - lp
     - icanhasbukkit
